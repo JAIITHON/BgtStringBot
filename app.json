@@ -1,7 +1,7 @@
 {
-  "name": "بوت استخراج جلسة",
-  "description": "Generate Pyrogram And Telethon String Session Easley",
-  "logo": "https://telegra.ph/file/27bfcfbb9d72fb3f3a1ca.jpg",
+  "name": "sᴇssɪᴏɴ ɢᴇɴᴇʀᴀᴛᴏʀ",
+  "description": "A Telegram Bot to generate Telethon and Pyrogram String Session.",
+  "logo": "https://telegra.ph/file/654ddaf472f18b799600b.jpg",
   "keywords": [
     "telegram",
     "bot",
@@ -11,51 +11,37 @@
     "buildpacks": [{
     "url": "heroku/python"
   }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
-  "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
   "repository": "https://github.com/xlucifer711/BgtStringBot",
   "env": {
     "ENVIRONMENT": {
       "description": "Don't change ANYTHING.",
-      "required": false,
+      "required": true,
       "value": "ANYTHING"
     },
-            "API_ID": {
-            "description": "Your App ID",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Your App Hash",
-            "required": true
-        },
-        "MUST_JOIN": {
-            "description": "INPUT CHANNEL USERNAME WITHOUT @ ",
-            "required": true
-        },
-        "BOT_TOKEN": {
-            "description": "Your Bot Token",
-            "required": true
-        },
-        "MONGO_DB_URL": {
-            "description": "Your Mongo DB URL",
-            "required": true
-        },
-        "OWNER_ID": {
-            "description": "Your User Id",
-            "required": true   
+    "API_ID": {
+      "description": "Get this value from my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org/apps.",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Telegram id of the person who will known as owner of the bot.",
+      "required": true,
+      "value": ""
+    },
+    "MUST_JOIN": {
+      "description": "Username of a group or channel for which you want to set force sub.(without @)",
+      "required": true,
+      "value": "DevilsHeavenMF"
+    },
+    "BOT_TOKEN": {
+      "description": "Get this value from @BotFather",
+      "required": true,
+      "value": ""
     }
   }
 }
-
