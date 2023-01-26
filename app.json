@@ -1,12 +1,38 @@
 {
-    "name": "BGT STRING BOT",
-    "logo": "https://te.legra.ph/file/ceee32999a8250a1f7ebb.png",
-    "description": "An Advanced Premium Music & user Bot For Telegram ID.",
-    "keywords": ["music", "voice chat", "userbot"],
-    "repository": "https://github.com/BIKASHHALDERNEW/BGTSTRINGBOT",
-    "stack": "container",
-    "env": {
-        "API_ID": {
+  "name": "بوت استخراج جلسة",
+  "description": "Generate Pyrogram And Telethon String Session Easley",
+  "logo": "https://telegra.ph/file/27bfcfbb9d72fb3f3a1ca.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+  "repository": "https://github.com/xlucifer711/BgtStringBot",
+  "env": {
+    "ENVIRONMENT": {
+      "description": "Don't change ANYTHING.",
+      "required": false,
+      "value": "ANYTHING"
+    },
+            "API_ID": {
             "description": "Your App ID",
             "required": true
         },
@@ -29,13 +55,7 @@
         "OWNER_ID": {
             "description": "Your User Id",
             "required": true   
-    },
-    "buildpacks": [
-    {
-      "url": "heroku/python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
     }
-  ]
+  }
 }
+
