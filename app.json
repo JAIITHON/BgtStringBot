@@ -3,7 +3,7 @@
     "logo": "https://te.legra.ph/file/ceee32999a8250a1f7ebb.png",
     "description": "An Advanced Premium Music & user Bot For Telegram ID.",
     "keywords": ["music", "voice chat", "userbot"],
-    "repository": "https://github.com/BIKASHHALDERNEW/BGTSTRINGBOT",
+    "repository": "https://github.com/xlucifer711/BGTSTRINGBOT",
     "stack": "container",
     "env": {
         "API_ID": {
